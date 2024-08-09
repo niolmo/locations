@@ -1,0 +1,80 @@
+//FONTS
+@import "./fonts";
+@import "./unify";
+//VARIABLES
+:root {
+    --first-color: #ff6600;
+    --second-color: #172139;
+    --bg-color: #f4f4f4;
+    --white-color: #ffffff;
+}
+// imports;
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 11 15px;
+    background-color: var(--bg-color);
+}
+.header {
+    background-color: var(--white-color);
+    padding: 16px 30px;
+    &__logo {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 8px;
+        .logo__img {
+            padding: 8px 0;
+        }
+    }
+}
+
+.page {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    &__menu {
+        &-list {
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 15px;
+        }
+
+        &-link {
+            padding: 0 15px;
+            width: 290px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-lable {
+            font-family: Futura PT;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &-img {
+            width: 15px;
+            height: 14px;
+        }
+
+        &-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
