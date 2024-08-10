@@ -1,6 +1,7 @@
 //FONTS
 @import "./fonts";
 @import "./unify";
+
 //VARIABLES
 :root {
     --first-color: #ff6600;
@@ -143,6 +144,9 @@ body {
         &-list {
             display: flex;
             gap: 44.5px;
+        }
+        &--options {
+            width: 100%;
         }
 
         &-title {

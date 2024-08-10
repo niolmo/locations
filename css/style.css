@@ -257,6 +257,9 @@ body {
   display: flex;
   gap: 44.5px;
 }
+.page__loc--options {
+  width: 100%;
+}
 .page__loc-title {
   color: var(--dark-color);
   font-family: Futura PT;
