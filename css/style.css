@@ -140,6 +140,9 @@
 .header {
   background-color: var(--white-color);
   padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   display: flex;
@@ -149,6 +152,10 @@
 }
 .header__logo .logo__img {
   padding: 8px 0;
+}
+.header__exit {
+  width: 16px;
+  height: 14px;
 }
 
 .page {
@@ -263,7 +270,19 @@
   border: 1px solid #d7d7d7;
   background-repeat: no-repeat;
   background-position: center left 15px;
-  color: #d7d7d7;
+}
+.page__sync-search-input::-moz-placeholder {
+  color: #bebebe;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 10%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.page__sync-search-input::placeholder {
+  color: #bebebe;
   font-family: Futura PT;
   font-size: 14px;
   font-weight: 600;

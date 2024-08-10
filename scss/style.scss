@@ -20,6 +20,9 @@
 .header {
     background-color: var(--white-color);
     padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &__logo {
         display: flex;
         justify-content: start;
@@ -28,6 +31,10 @@
         .logo__img {
             padding: 8px 0;
         }
+    }
+    &__exit {
+        width: 16px;
+        height: 14px;
     }
 }
 
@@ -150,14 +157,16 @@
                 border: 1px solid #d7d7d7;
                 background-repeat: no-repeat;
                 background-position: center left 15px;
-                color: #d7d7d7;
-                font-family: Futura PT;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 18px;
-                letter-spacing: 10%;
-                text-align: left;
-                text-transform: uppercase;
+                &::placeholder {
+                    color: #bebebe;
+                    font-family: Futura PT;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    letter-spacing: 10%;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
             }
 
             &-lable {
