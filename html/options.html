@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <title>Локации</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <title>Настройки</title>
   </head>
+
   <body>
     <div class="container">
       <svg
@@ -22,14 +23,14 @@
       </svg>
       <header class="header">
         <div class="header__logo">
-          <img src="./img/logo.svg" alt="logo" class="logo__img" />
+          <img src="../img/logo.svg" alt="logo" class="logo__img" />
           <img
-            src="./img/version.svg"
+            src="../img/version.svg"
             alt="version"
             class="logo__img--version"
           />
         </div>
-        <img src="./img/exit.svg" alt="exit" class="header__exit" />
+        <img src="../img/exit.svg" alt="exit" class="header__exit" />
       </header>
       <main class="page">
         <nav class="page_menu">
@@ -37,7 +38,7 @@
             <li class="page__menu-item">
               <a href="#" class="page__menu-link"
                 ><img
-                  src="./img/menu/box.svg"
+                  src="../img/menu/box.svg"
                   alt="IMG"
                   class="page__menu-img"
                 /><span class="page__menu-lable">Имущество</span></a
@@ -46,7 +47,7 @@
             <li class="page__menu-item">
               <a href="#" class="page__menu-link"
                 ><img
-                  src="./img/menu/list.svg"
+                  src="../img/menu/list.svg"
                   alt="IMG"
                   class="page__menu-img"
                 /><span class="page__menu-lable">Инвентаризация</span></a
@@ -55,7 +56,7 @@
             <li class="page__menu-item">
               <a href="#" class="page__menu-link"
                 ><img
-                  src="./img/menu/staff.svg"
+                  src="../img/menu/staff.svg"
                   alt="IMG"
                   class="page__menu-img"
                 /><span class="page__menu-lable">Сотрудники</span></a
@@ -64,27 +65,25 @@
             <li class="page__menu-item">
               <a href="#" class="page__menu-link"
                 ><img
-                  src="./img/menu/notification.svg"
+                  src="../img/menu/notification.svg"
                   alt="IMG"
                   class="page__menu-img"
                 /><span class="page__menu-lable">Уведомления</span></a
               >
             </li>
             <li class="page__menu-item">
-              <a
-                href="./index.html"
-                class="page__menu-link page__menu-link--active"
+              <a href="../index.html" class="page__menu-link"
                 ><img
-                  src="./img/menu/geo.svg"
+                  src="../img/menu/geo.svg"
                   alt="IMG"
                   class="page__menu-img"
                 /><span class="page__menu-lable">Локации</span></a
               >
             </li>
             <li class="page__menu-item">
-              <a href="./html/options.html" class="page__menu-link"
+              <a href="#" class="page__menu-link page__menu-link--active"
                 ><img
-                  src="./img/menu/options.svg"
+                  src="../img/menu/options.svg"
                   alt="IMG"
                   class="page__menu-img"
                 /><span class="page__menu-lable">Настройки</span></a
@@ -92,59 +91,43 @@
             </li>
           </ul>
           <button class="page__menu-btn">
-            <img src="./img/arrow.svg" alt="arrow" class="page__menu-img" />
+            <img src="../img/arrow.svg" alt="arrow" class="page__menu-img" />
             <span class="page__menu-lable">Скрыть меню</span>
           </button>
         </nav>
         <div class="page__content">
-          <section class="page__loc">
-            <h1 class="page__loc-title">Локации/Все локации</h1>
+          <section class="page__loc page__loc--options">
+            <h1 class="page__loc-title page__loc-title--options">
+              Настройки / Локации
+            </h1>
             <ul class="page__loc-list">
               <li class="page__loc-item">
+                <a href="#" class="page__loc-link">Имущество</a>
+              </li>
+              <li class="page__loc-item">
+                <a href="#" class="page__loc-link">Инвентаризация</a>
+              </li>
+              <li class="page__loc-item">
+                <a href="#" class="page__loc-link">Сотрудники</a>
+              </li>
+              <li class="page__loc-item">
                 <a href="#" class="page__loc-link page__loc-link--active"
-                  >Все локации</a
+                  >Локации</a
                 >
               </li>
               <li class="page__loc-item">
-                <a href="#" class="page__loc-link">Импорт/Экспорт</a>
+                <a href="#" class="page__loc-link">Уведомления</a>
               </li>
               <li class="page__loc-item">
-                <a href="#" class="page__loc-link">Настройки</a>
+                <a href="#" class="page__loc-link">Справочники</a>
+              </li>
+              <li class="page__loc-item">
+                <a href="#" class="page__loc-link">Пользователь</a>
               </li>
             </ul>
-            <button class="page__loc-btn batton">
-              <img
-                src="./img/plus.svg"
-                alt="IMD"
-                class="page__loc-img page__loc-img--plus"
-              />
-              <span class="page__loc-lable batton__lable">Создать локацию</span>
-            </button>
-          </section>
-
-          <section class="page__sync">
-            <a class="batton batton--sync page__sync-btn">
-              <img
-                src="./img/update.svg"
-                alt="IMD"
-                class="batton__img batton__img--update"
-              /><span class="batton__lable">Синхронизировать</span>
-              <span class="batton__date">(17.05.2024 15:23:21)</span>
-            </a>
-            <div class="page__sync-search">
-              <input
-                type="checkbox"
-                checked
-                class="page__sync-checkbox checkbox"
-                id="checkbox_sync"
-              />
-              <p class="page__sync-lable">Показывать только активные</p>
-              <input
-                type="search"
-                class="page__sync-search-input"
-                placeholder="Поиск"
-              />
-            </div>
+            <section class="page__table">
+              <h1 class="page__table-title">Настройка полей таблицы</h1>
+            </section>
           </section>
         </div>
       </main>
@@ -155,7 +138,7 @@
             Последняя передача 20.09.2021 18:38:21
           </p>
         </div>
-        <a href="#" class="page__footer-doc">
+        <div class="page__footer-doc">
           <svg
             class="page__footer-svg"
             width="15"
@@ -170,7 +153,7 @@
             />
           </svg>
           <p class="page__footer-dokText">Документация</p>
-        </a>
+        </div>
       </footer>
     </div>
     <script src="./js/script.js"></script>
