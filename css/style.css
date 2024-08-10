@@ -52,11 +52,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.active {
-  background-color: var(--second-color);
-  color: var(--white-color);
-}
-
 .batton {
   width: 286px;
   height: 50px;
@@ -100,7 +95,7 @@
   text-transform: uppercase;
 }
 .batton--sync {
-  width: 336px;
+  width: 316px;
   height: 50px;
 }
 
@@ -109,6 +104,7 @@
   --second-color: #172139;
   --bg-color: #f4f4f4;
   --white-color: #ffffff;
+  --dark-color: #000;
 }
 
 .container {
@@ -135,8 +131,6 @@
 .page {
   margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 30px;
 }
 .page__menu-list {
@@ -148,12 +142,17 @@
   gap: 15px;
 }
 .page__menu-link {
+  color: var(--second-color);
   padding: 0 15px;
   width: 290px;
   height: 62px;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.page__menu-link--active {
+  background-color: var(--second-color);
+  color: var(--white-color);
 }
 .page__menu-lable {
   font-family: Futura PT;
@@ -173,4 +172,57 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.page__content {
+  width: calc(100% - 290px);
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.page__loc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+.page__loc-list {
+  display: flex;
+  gap: 44.5px;
+}
+.page__loc-title {
+  color: var(--dark-color);
+  font-family: Futura PT;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.page__loc-link {
+  width: 165px;
+  height: 37px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: var(--dark-color);
+  font-family: Futura PT;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.page__loc-link--active {
+  background-color: var(--second-color);
+  color: var(--white-color);
+}
+.page__sync {
+  width: 50%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 25px;
 }/*# sourceMappingURL=style.css.map */
