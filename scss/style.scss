@@ -136,5 +136,39 @@
         flex-direction: column;
         align-items: end;
         gap: 25px;
+        &-search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            &-input {
+                width: 300px;
+                height: 50px;
+                padding: 15px 39px;
+                background-image: url(../img/search.svg);
+                border: 1px solid #d7d7d7;
+                background-repeat: no-repeat;
+                background-position: center left 15px;
+                color: #d7d7d7;
+                font-family: Futura PT;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+                letter-spacing: 10%;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            &-lable {
+                color: var(--dark-color);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
     }
 }
